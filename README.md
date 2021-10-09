@@ -52,7 +52,7 @@ You can do everything from build to deployment in one go. Usually, a Function is
 is a large build.
 
 ```shell
-npx ld-deploy -n "your-function-name" -e ./src/index.ts -o ./dist/app/index.js -d ./dist/app -z ~/Desktop/app.zip
+npx ld-deploy -n "your-function-name" -e ./src/index.ts -o ./dist/app/index.js -d ./dist/app -z ./dist/app.zip
 ```
 
 ### NPM Script Snippets
