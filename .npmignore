@@ -1,0 +1,5 @@
+.nvmrc
+.eslintignore
+.eslintrc.js
+.node-version
+src/**/*
