@@ -3,15 +3,13 @@
 LambdaKit is a package that helps you develop Lambda Functions in AWS. With this package in place, you can very quickly
 run local tests, build involving packages, create ZIP packages for deployment, and deploy them.
 
-LambdaDevKit can also be used as a "ts-node" replacement for TypeScript utilizing ESModules. ld-build command generates
-JavaScript files with resolved dependencies. The ld-build command generates JavaScript files with resolved dependencies,
-allowing you to easily run complex TypeScript without the need for complex module resolution in ts-node.
-
 ---
 
 In particular, in JavaScript, there are cases where external packages are used, or TypeScript is used, and it is
 necessary to build and resolve modules when running in Lambda. This package suggests a better way and provides a quick
 way to perform that function. With this package, you will be able to develop more comfortably.
+
+---
 
 ## Usage
 
