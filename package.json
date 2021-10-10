@@ -1,7 +1,7 @@
 {
   "name": "lambda-dev-kit",
-  "version": "0.0.2",
-  "description": "LambdaKit is a package that helps you develop Lambda Functions in AWS",
+  "version": "0.0.3",
+  "description": "LambdaDevKit is a package that helps you develop Lambda Functions in AWS",
   "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0"
