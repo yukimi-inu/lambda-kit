@@ -25,6 +25,10 @@ const argv = yargs
     description: 'handler name',
     default: 'handler'
   })
+  .option('stringify', {
+    alias: 's',
+    description: 'output stringify JSON'
+  })
   .help()
   .argv;
 
@@ -43,7 +47,11 @@ async function main() {
 
   const fn = require(scriptPath);
   const output = await fn[argv['handler']](event, context);
-  console.log(output);
+  if (argv.s) {
+    console.log(JSON.stringify(output));
+  } else {
+    console.log(output);
+  }
 }
 
 main();
