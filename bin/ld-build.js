@@ -35,6 +35,12 @@ const argv = yargs
     description: 'Specify node target',
     default: 'node14'
   })
+  .option('external', {
+    alias: 'x',
+    array: true,
+    description: 'Specity External Libraries',
+    default: ['aws-sdk']
+  })
   .help()
   .argv;
 
@@ -42,7 +48,7 @@ function main() {
   // Build script
   const options = {
     bundle: true,
-    external: ['aws-sdk'],
+    external: argv['external'] || ['aws-sdk'],
     minify: !!argv['minify'],
     platform: 'node',
     target: argv['target'],
